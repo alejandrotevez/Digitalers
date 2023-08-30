@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Formulario</title>
+        <link rel="stylesheet" href="../css/formulario-tarea.css">
+    </head>
+    <body>
+        <main class="contenedor">
+            <h1>Formulario de contacto</h1>
+            <h4>Escribenos y en breve los pondremos en contacto contigo</h4>
+            <form>
+                <label for="nombre">Nombre <span>*</span> </label>
+                <input
+                    name="nombre"
+                    type="text"
+                    placeholder="Nombre del producto"
+                    required
+                />
+
+                <label for="email">Email <span>*</span> </label>
+                <input
+                    name="email"
+                    type="email"
+                    placeholder="Nombre del producto"
+                    required
+                />
+
+                <label for="telefono">Telefono</label>
+                <input
+                    name="telefono"
+                    type="tel"
+                    placeholder="Nombre del producto"
+                />
+
+                <label for="sitio web">Sitio web </label>
+                <input
+                    type="text"
+                    placeholder="Nombre del producto"
+                    name="sitio web"
+                />
+
+                <label for="asunto">Asunto<span>*</span> </label>
+                <input
+                    type="text"
+                    name="asunto"
+                    placeholder="Nombre del producto"
+                />
+
+                <label for="mensaje">Mensaje <span>*</span> </label>
+                <textarea
+                    name="mensaje"
+                    id=""
+                    cols="20"
+                    rows="5"
+                    placeholder="Nombre del producto"
+                ></textarea>
+
+                <button>Enviar</button>
+            </form>
+            <p><span>*</span> los campos son obligatorios</p>
+        </main>
+    </body>
+</html>

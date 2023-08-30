@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(246, 142, 142);
+    height: 20px;
+}
+
+nav {
+    background: rgb(156, 156, 223);
+}
+
+.lateral {
+    display: flex;
+    justify-content: center;
+} 
+
+a {
+    text-decoration: none;
+}
+
+/* usamos flexbox: apuntando al contenedor padre */
+.fila {
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.columna {
+    display: flex;
+    background: rgb(131, 217, 131);
+    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 45%;
+    margin: 1%;
+}
+
+li {
+    margin: 15px;
+    list-style: none;
+    padding: 15px;
+    background: rgb(9, 155, 228);
+}
+
+img {
+    width: 120px;
+    height: 80px;
+}
+
+/* Elementos que flotan a la izquierda para que se acomoden */
+/* li {
+    list-style: none;
+    float: left;
+    margin: 25px;
+} */
+
+button {
+    padding: 5px;
+    background: rgb(156, 156, 223);
+    margin: 10px;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}

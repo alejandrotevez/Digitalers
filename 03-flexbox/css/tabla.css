@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 32px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    /* border: 1px solid black; */
+    /* padding: 5px; */
+    background: rgb(183, 245, 255);
+}
+
+th {
+    background: rgb(159, 106, 208);
+}
+
+.horario {
+    background-color: rgb(245, 172, 255);
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+/* responsivo */
+
+/*  X-Small devices (portrait phones, less than 576px)
+    No media query for `xs` since this is the default in Bootstrap
+
+ Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) { /* asume los estilos hasta los 576 px */
+
+* {
+    font-size: 12px;
+}
+    
+
+    body {
+    background: red;
+    }
+}
+
+@media (min-width: 576px) { /* asume los estilos hasta los 576 px */
+
+    * {
+        font-size: 16px;
+    }
+        
+    
+        body {
+        background: red;
+        }
+    }
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { /* este estilo inicia en 768 px */
+    * {
+        font-size: 20px;
+    }
+    
+    body {
+        background: blue;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    * {
+        font-size: 26px;
+    }
+    
+    body {
+        background: rgb(242, 0, 255);
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    * {
+        font-size: 30px;
+    }
+    
+    body {
+        background: rgb(208, 255, 0);
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    * {
+        font-size: 34px;
+    }
+    
+    body {
+        background: rgb(0, 255, 255);
+    }
+    }

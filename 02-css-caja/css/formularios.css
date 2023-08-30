@@ -1,0 +1,25 @@
+.titulo {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-transform: lowercase; /* palabras en minuscula */
+    text-transform: capitalize; /* primer letra de cada palabra en mayuscula */
+}
+
+nav {
+    font-size: 30px;
+    text-align: right;
+    text-transform: uppercase; /* palabras en mayuscula */
+}
+
+.datosPersonales {
+    width: 80%;
+}
+
+input {
+    width: 100%;
+}
+
+.inputPrecio {
+    width: 50%;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formularios.css">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">home</a>
+    </nav>
+    <div class="titulo">
+        <h1>
+            Formulario de Registro de Productos
+        </h1>
+    </div>
+
+    <form action="">
+        <h2>Datos Personales</h2>
+        <div class="datosPersonales">
+            <label for="nombreProducto">
+                Nombre del Producto
+            </label>
+            <br>
+            <input 
+                type="text" 
+                id="nombreProducto" 
+                name="nombreProducto" 
+                placeholder="Nombre Del Producto"
+                maxlength="20"
+                minlength="2"
+                required
+            >
+            <br>
+            <label for="precioProducto">Precio Producto</label>
+            <br>
+            <input 
+                type="number" 
+                id="precioProducto" 
+                name="precioProducto"
+                min="10"
+                max="100"
+                autofocus
+                autocomplete="on"
+                class="inputPrecio"
+            >
+            <br>
+            <label for="emailProveedor">Email Provedor</label>
+            <br>
+            <input 
+                type="email"
+                required
+                id="emailProveedor"
+                placeholder="email@gmail.com"
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+            >
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input 
+                type="password"
+                required
+                minlength="5"
+                maxlength="20"
+            >
+            <br>
+            <label for="archivo">Imagen</label>
+            <br>
+            <input 
+                type="file"
+                name="archivo" 
+                id="archivo"
+                accept="imagen/*">
+
+        </div>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10">
+        </textarea>
+        <br>
+        <label for="provincias">Seleccione una provincia</label>
+        <select name="provincias" id="provincias">
+            <option value="CABA">CABA</option>
+            <option value="Buenos aires">Buenos aires</option>
+            <option value="Salta">Salta</option>
+            <option value="San juan">San juan</option>
+        </select>
+        <br>
+        <label for="fecha">Fecha de Nacimiento</label>
+        <br>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        <br>
+        <label for="genero">Genero</label>
+        <br>
+        
+        <input type="radio" id="genero" name="genero" value="Hombre">Hombre
+        <input type="radio" id="genero" name="genero" value="Mujer">Mujer
+        <input type="radio" id="genero" name="genero" value="Otro">Otro
+        <br>
+        <label for="Deportes">Deportes</label>
+        <br>
+        <input type="checkbox" id="deporte" name="deporte" value="Futbol">Futbol
+        <input type="checkbox" id="deporte" name="deporte" value="Voley">Voley
+        <input type="checkbox" id="deporte" name="deporte" value="Basquet">Basquet
+        <br>
+        <button type="submit">
+            Enviar Datos
+        </button>
+        <br>
+        <input type="submit" value="Envio datos por un input">
+        <br>
+        <button type="reset">Borrar form con boton</button>
+        <br>
+        <input type="reset" value="borrar datos con input">
+
+    </form>
+
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe numquam placeat ipsam atque delectus ut eius, sapiente veniam deserunt veritatis nesciunt laboriosam excepturi blanditiis aperiam exercitationem autem et natus reprehenderit!
+    </p>
+    <hr>
+
+    <form action="">
+        <fieldset>
+            <legend>Seccion Producto</legend>
+        <label for="nombreProducto">
+            Nombre del Producto
+        </label>
+        <br>
+        <input 
+            type="text" 
+            id="nombreProducto" 
+            name="nombreProducto" 
+            placeholder="Nombre Del Producto"
+            maxlength="20"
+            minlength="2"
+            required
+        >
+        <br>
+        </fieldset>
+
+        <button type="submit">
+            Enviar Datos
+        </button>
+    </form>
+
+</body>
+</html>
